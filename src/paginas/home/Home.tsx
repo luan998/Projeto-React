@@ -12,17 +12,17 @@ function Home(){
             <Grid container direction="row" justifyContent="center" alignItems="center" style={{ backgroundColor: "#5CDB95" }}>
                 <Grid alignItems="center" item xs={6}>
                     <Box paddingX={20} >
-                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" style={{ color: "white", fontWeight: "bold" }}>Seja bem vindo(a)!</Typography>
-                        <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" style={{ color: "white", fontWeight: "bold" }}>expresse aqui os seus pensamentos e opiniões!</Typography>
+                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" style={{ color: "white", fontWeight: "bold" }} className="letracor fontef2">Seja bem vindo(a)!</Typography>
+                        <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" style={{ color: "white", fontWeight: "bold" }} className="letracor fontef1">digite aqui seus pensamentos do dia!</Typography>
                     </Box>
                     <Box display="flex" justifyContent="center">
                         <Box marginRight={1}>
                         </Box>
-                        <Button style={{ borderColor: "white", backgroundColor: "#05386B", color: "white" }}>Ver Postagens</Button>
+                        <Button style={{ borderColor: "white", backgroundColor: "#05386B", color: "white" }} className="letracor fontef2">Ver Postagens</Button>
                     </Box>
                 </Grid>
                 <Grid item xs={6} >
-                    <img src="https://i.imgur.com/H88yIo2.png" alt="" width="500px" height="500px" />
+                    <img src="https://icon-library.com/images/puzzle-piece-icon-png/puzzle-piece-icon-png-4.jpg" alt="" width="500px" height="500px" />
                 </Grid>
                 <Grid xs={12} style={{ backgroundColor: "white" }}>
                 </Grid>

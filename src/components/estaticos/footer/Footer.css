@@ -1,3 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&family=Comforter&display=swap');
+
+
+.fontef1{
+    font-family: 'Barlow Semi Condensed', sans-serif!important;
+}
+
 .fonte{
     font-family: "Helvetica";
+}
+
+.footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;   /* Height of the footer */
+    background:#6cf;
+}
+
+.letracor{
+    color: #EDF5E1!important;
+}
+
+.iconcor{
+    color: #EDF5E1!important;
 }
