@@ -1,13 +1,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&family=Comforter&display=swap');
 
+.cursor{
+    cursor: pointer;
+    color: white;
+}
 
 .fontef1{
-    font-family: 'Barlow Semi Condensed', sans-serif!important;
+    font-family: 'Barlow Semi Condensed', sans-serif;
 }
-.fontef2{
 
-}
 
 .cor{
     background-color: #379683;
@@ -18,8 +20,8 @@
 .fonte{
     font-family: "Helvetica";
 }
-.letracor1{
-    color: #05386b!important;
+.letracor2{
+    color: #05396b!important;
 }
 
 
@@ -32,4 +34,7 @@
 /*Colocar o search bar no final*/
 .last-item {
     margin-left: auto!important;
+}
+.text-decorator-none{
+    text-decoration: none;
 }

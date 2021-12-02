@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&family=Comforter&display=swap');
+
+.fontef1{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: #EDF5E1;
+}
+
+.corfundo{
+    background-color: #5CDB95;
+}
+.corfundobt{
+    background-color: #094628;
+}
+.corfundocaixa{
+    background-color: #EDF5E1;
+}
+
+.textologin{
+    font-weight: bold!important;
+}
+
+.text-decorator-none{
+    text-decoration: none;
+}
+
+.imagem{
+    background-image: url(https://i.imgur.com/d5bMdDJ.jpg);
+    background-repeat: no-repeat; 
+    width: 100vh; 
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+}
+.cadastrocor{
+    color: #05396b;
+}

@@ -4,7 +4,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&family=Barlow+Semi+Condensed:wght@500;800&family=Comforter&display=swap');
 
-/*Precisa do important dps pra sobrepor o do navbar na página e dps coloca lá no typescrypt, classname = "fontef"*/
+.caixa{
+    background-color: #5CDB95
+}
+
 .fontef1{
     font-family: 'Barlow Semi Condensed', sans-serif!important;
 }
@@ -15,6 +18,21 @@
 .titulo{
     color: aqua;
     text-align: center;
+}
+
+.titulo2{
+    color: 'white';
+    font-weight: 'bold';
+}
+
+.botao{
+    
+    background-color: #05386B!important;
+    color: '#05386B';
+}
+
+.postagens{
+    background-color: #5CDB95;
 }
 
 .img{

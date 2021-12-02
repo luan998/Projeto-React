@@ -1,5 +1,6 @@
 import React from 'react';
 import{AppBar, Toolbar, Typography, Box} from '@material-ui/core';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 import './Search'
 import Search from './Search';
@@ -18,42 +19,43 @@ const theme = createMuiTheme({
 function Navbar() {
     return (
         <>
-            <AppBar position="fixed" className="navbar">
+            <AppBar position="sticky" className="navbar">
                 <Toolbar variant="dense" className="cor2">
-                    <Box style={{ cursor: "pointer" }} >
-                        <Typography variant="h5" className="letracor1 fontef1">
+                    <Box className="cursor" >
+                        <Typography variant="h5" className="letracor2 fontef1">
                             BlogPessoal
                         </Typography>
                     </Box>
 
                     <Box display="flex" justifyContent="start">
-                        <Box mx={1} style={{ cursor: "pointer" }}>
-                            <Typography variant="h6" className="letracor1 fontef1">
+                        <Box mx={1} className="cursor">
+                            <Typography variant="h6" className="letracor2 fontef1">
                                 home
                             </Typography>
                         </Box>
-                        <Box mx={1} style={{ cursor: "pointer" }}>
-                            <Typography variant="h6" className="letracor1 fontef1">
+                        <Box mx={1} className="cursor">
+                            <Typography variant="h6" className="letracor2 fontef1">
                                 postagens
                             </Typography>
                         </Box>
-                        <Box mx={1} style={{ cursor: "pointer" }}>
-                            <Typography variant="h6" className="letracor1 fontef1">
+                        <Box mx={1} className="cursor">
+                            <Typography variant="h6" className="letracor2 fontef1">
                                 temas
                             </Typography>
                         </Box>
-                        <Box mx={1} style={{ cursor: "pointer" }}>
-                            <Typography variant="h6" className="letracor1 fontef1">
+                        <Box mx={1} className="cursor">
+                            <Typography variant="h6" className="letracor2 fontef1">
                                 cadastrar tema
                             </Typography>
                         </Box>
-                        <Box mx={1} style={{ cursor: "pointer" }}>
-                            <Typography variant="h6" className="letracor1 fontef1" >
-                                logout
-                            </Typography>
+                        <Link to='/login' className='text-decorator-none'>
+                            <Box mx={1} className="cursor">
+                                <Typography variant="h6" className="letracor2 fontef1" >
+                                    logout
+                                </Typography>
                             
-                        </Box>
-                        
+                            </Box>
+                        </Link>
                     </Box>
                     <Box className="last-item"><Search />
                     </Box>
