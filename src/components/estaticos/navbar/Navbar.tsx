@@ -1,5 +1,5 @@
 import React from 'react';
-import{AppBar, Toolbar, Typography, Box} from '@material-ui/core';
+import { AppBar, Toolbar, Typography, Box } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import './Search'
