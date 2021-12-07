@@ -1,5 +1,5 @@
 import React from 'react';
-import InstagramIcon from '@material-ui/icons/Instagram'
+import GitHubIcon from '@mui/icons-material/GitHub'
 import FacebookIcon from '@material-ui/icons/Facebook'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import{Typography, Box, Grid} from '@material-ui/core'
@@ -18,10 +18,10 @@ function Footer(){
                             <a href="https://www.facebook.com/generationbrasil" target="_blank">
                                 <FacebookIcon  className=" letracor redes"/>
                             </a>
-                            <a href="https://www.instagram.com/generationbrasil/" target="_blank">
-                                <InstagramIcon  className=" letracor redes" />
+                            <a href="https://github.com/luan998" target="_blank">
+                                <GitHubIcon  className=" letracor redes" />
                             </a>
-                            <a href="https://www.linkedin.com/school/generationbrasil/" target="_blank">
+                            <a href="https://www.linkedin.com/in/luan-rodrigues-88a5b1152/" target="_blank">
                                 <LinkedInIcon className=" letracor redes"/>
                             </a>
                         </Box>

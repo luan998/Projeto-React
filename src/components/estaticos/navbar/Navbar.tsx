@@ -1,6 +1,7 @@
 import React from 'react';
 import { AppBar, Toolbar, Typography, Box } from '@material-ui/core';
-import { Link } from 'react-router-dom';
+import useLocalStorage from 'react-use-localstorage';
+import { Link, useHistory } from 'react-router-dom';
 import './Navbar.css';
 import './Search'
 import Search from './Search';
@@ -17,7 +18,14 @@ const theme = createMuiTheme({
 
 
 function Navbar() {
+    let history = useHistory();
+    const [token, setToken] = useLocalStorage('token');
+    function logout() {
+        setToken('');
+        history.push('/login');
+    }
     return (
+        
         <>
             <AppBar position="sticky" className="navbar">
                 <Toolbar variant="dense" className="cor2">
@@ -29,28 +37,36 @@ function Navbar() {
 
                     <Box display="flex" justifyContent="start">
                         <Box mx={1} className="cursor">
+                            <Link to='/home' className='text-decorator-none'>
                             <Typography variant="h6" className="letracor2 fontef1">
                                 home
                             </Typography>
+                            </Link>
                         </Box>
                         <Box mx={1} className="cursor">
+                            <Link to='/postagens' className='text-decorator-none'>
                             <Typography variant="h6" className="letracor2 fontef1">
                                 postagens
                             </Typography>
+                            </Link>
                         </Box>
                         <Box mx={1} className="cursor">
+                            <Link to='/temas' className='text-decorator-none'>
                             <Typography variant="h6" className="letracor2 fontef1">
                                 temas
                             </Typography>
+                            </Link>
                         </Box>
+                        <Link to='/formularioTema' className='text-decorator-none'>
                         <Box mx={1} className="cursor">
                             <Typography variant="h6" className="letracor2 fontef1">
                                 cadastrar tema
                             </Typography>
                         </Box>
+                        </Link>
                         <Link to='/login' className='text-decorator-none'>
-                            <Box mx={1} className="cursor">
-                                <Typography variant="h6" className="letracor2 fontef1" >
+                            <Box mx={1} className="cursor" onClick={() => logout()}>
+                                <Typography variant="h6" className="letracor2 fontef1">
                                     logout
                                 </Typography>
                             

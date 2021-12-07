@@ -1,6 +1,7 @@
 import React from'react';
 import {Typography, Box, Grid, Button} from '@material-ui/core'
 import './Home.css';
+import TabPostagem from '../../components/estaticos/postagens/tabpostagem/TabPostagem';
 
 /*vh é o tamanho da view port, de quem tá vendo */
 //o grid item, tá definindo o tamanho das colunas por tamanho de tela, xs, sm, e etc são os tamanho das colunas
@@ -25,6 +26,7 @@ function Home(){
                     <img src="https://icon-library.com/images/puzzle-piece-icon-png/puzzle-piece-icon-png-4.jpg" alt="" width="500px" height="500px" />
                 </Grid>
                 <Grid xs={12} className='postagens'>
+                    <TabPostagem />
                 </Grid>
             </Grid>
         </>

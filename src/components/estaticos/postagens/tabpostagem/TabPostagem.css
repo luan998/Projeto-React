@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&family=Comforter&display=swap');
+
+.tab-nav{
+    box-shadow: none!important;
+    background-color: #379683;
+}
+
+.tab-typo{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: #05396b;
+    font-weight: bold;
+}
+
+.tab-typo2{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: #05396b;
+}
+.titulo{
+    font-weight: bold;
+}
