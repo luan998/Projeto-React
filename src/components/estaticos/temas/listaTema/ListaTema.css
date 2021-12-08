@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&family=Barlow+Semi+Condensed:wght@500;800&family=Comforter&display=swap');
 
 .caixa-tema{
-    background-color: #EDF5E1
+    background-color: #EDF5E1!important;
 }
 .borda-tema{
     border-radius: 15px!important;
@@ -13,28 +13,28 @@
 }
 
 .fonte-tema{
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    color: #05396b;
-    font-size:large;
+    font-family: 'Barlow Semi Condensed', sans-serif!important;
+    color: #05396b!important;
+    font-size:large!important;
     
 }
 
 .fonte-tema-texto{
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    color: #041220;
-    font-size:x-large;
+    font-family: 'Barlow Semi Condensed', sans-serif!important;
+    color: #041220!important;
+    font-size:x-large!important;
 }
 
 .botao-tema{
-    font-family: 'Barlow Condensed', sans-serif;
-    background-color: rgb(136, 31, 31);
-    color: #EDF5E1;
-    font-size: large;
+    font-family: 'Barlow Condensed', sans-!important;
+    background-color: rgb(136, 31, 31)!important;
+    color: #EDF5E1!important;
+    font-size: large!important;
 }
 
 .botao-tema1{
-    font-family: 'Barlow Condensed', sans-serif;
-    background-color: #05386B;
-    color: #EDF5E1;
-    font-size: large;
+    font-family: 'Barlow Condensed', sans-serif!important;
+    background-color: #05386B!important;
+    color: #EDF5E1!important;
+    font-size: large!important;
 }

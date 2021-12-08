@@ -2,19 +2,19 @@
 
 .tab-nav{
     box-shadow: none!important;
-    background-color: #379683;
+    background-color: #379683!important;
 }
 
 .tab-typo{
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    color: #05396b;
-    font-weight: bold;
+    font-family: 'Barlow Semi Condensed', sans-serif!important;
+    color: #05396b!important;
+    font-weight: bold!important;
 }
 
 .tab-typo2{
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    color: #05396b;
+    font-family: 'Barlow Semi Condensed', sans-serif!important;
+    color: #05396b!important;
 }
 .titulo{
-    font-weight: bold;
+    font-weight: bold!important;
 }

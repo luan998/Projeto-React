@@ -1,10 +1,11 @@
 import React, { useState, useEffect }from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { Box, Card, CardActions, CardContent, Button, Typography } from '@material-ui/core';
-import './ListaPostagem.css';
 import useLocalStorage from 'react-use-localstorage';
 import Postagem from '../../../../models/Postagem';
 import { busca } from '../../../../service/Service';
+import './ListaPostagem.css';
+
 
 
 function ListaPostagem() {

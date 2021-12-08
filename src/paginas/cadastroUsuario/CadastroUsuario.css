@@ -9,13 +9,14 @@
     background-color: #5CDB95;
 }
 .corfundobt2{
-    background-color: #094628;
+    background-color: #094628!important;
 }
 .corfundobt3{
-    background-color: rgb(136, 31, 31);
+    background-color: rgb(136, 31, 31)!important;
 }
 .corfundocaixa2{
     background-color: #EDF5E1;
+    border-radius: 5px;
 }
 
 

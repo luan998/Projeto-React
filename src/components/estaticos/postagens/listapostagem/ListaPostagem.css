@@ -2,49 +2,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&family=Barlow+Semi+Condensed:wght@500;800&family=Comforter&display=swap');
 
 .caixa-postagem{
-    background-color: #EDF5E1
+    background-color: #EDF5E1!important;
 }
 .borda-postagem{
     border-radius: 15px!important;
 }
 
 .fonte-postagem{
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    color: #05396b;
-    font-size:large;
+    font-family: 'Barlow Semi Condensed', sans-serif!important;
+    color: #05396b!important;
+    font-size:large!important;
     
 }
 
 .fonte-postagem-texto{
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    color: #041220;
-    font-size:x-large;
+    font-family: 'Barlow Semi Condensed', sans-serif!important;
+    color: #041220!important;
+    font-size:x-large!important;
 }
 
 .fonte-postagem-texto2{
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    color: #041220;
+    font-family: 'Barlow Semi Condensed', sans-serif!important;
+    color: #041220!important;
     
 }
 
 .postagem-bold{
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    font-size: larger;
-    color: #05396b;
-    margin-top: 6px;
+    font-family: 'Barlow Semi Condensed', sans-serif!important;
+    font-size: larger!important;
+    color: #05396b!important;
+    margin-top: 6px!important;
 }
 .botao-postagem{
-    font-family: 'Barlow Condensed', sans-serif;
-    background-color: rgb(136, 31, 31);
-    color: #EDF5E1;
-    font-size: large;
+    font-family: 'Barlow Condensed', sans-serif!important;
+    background-color: rgb(136, 31, 31)!important;
+    color: #EDF5E1!important;
+    font-size: large!important;
 }
 
 .botao-postagem1{
-    font-family: 'Barlow Condensed', sans-serif;
-    background-color: #05386B;
-    color: #EDF5E1;
-    font-size: large;
+    font-family: 'Barlow Condensed', sans-serif!important;
+    background-color: #05386B!important;
+    color: #EDF5E1!important;
+    font-size: large!important;
 }
 
 .text-decorator-none{

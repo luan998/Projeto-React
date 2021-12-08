@@ -1,18 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&family=Comforter&display=swap');
 
-.fontef1{
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    color: #EDF5E1;
+.fontef1-login{
+    font-family: 'Barlow Semi Condensed', sans-serif!important;
+    color: #EDF5E1!important;
+}
+.fontef3-login{
+    font-family: 'Barlow Semi Condensed', sans-serif!important;
+    
 }
 
 .corfundo{
     background-color: #5CDB95;
 }
 .corfundobt{
-    background-color: #094628;
+    background-color: #094628!important;
 }
 .corfundocaixa{
     background-color: #EDF5E1;
+    border-radius: 5px;
 }
 
 .textologin{
@@ -20,7 +25,7 @@
 }
 
 .text-decorator-none{
-    text-decoration: none;
+    text-decoration: none!important;
 }
 
 .imagem{

@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react'
-import { Link, useHistory } from 'react-router-dom'
+import React, { useState, useEffect } from 'react';
+import { Link, useHistory } from 'react-router-dom';
 import { Box, Card, CardActions, CardContent, Button, Typography } from '@material-ui/core';
-import './ListaTema.css'
 import Tema from '../../../../models/Tema';
 import useLocalStorage from 'react-use-localstorage';
 import { busca } from '../../../../service/Service';
+import './ListaTema.css';
 
 function ListaTema() {
 

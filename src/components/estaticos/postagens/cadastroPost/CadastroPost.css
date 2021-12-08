@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&family=Comforter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&family=Barlow+Semi+Condensed:wght@500;800&family=Comforter&display=swap');
+
+.corfundo-caixa-cadastro{
+    background-color: #EDF5E1!important;
+    border-radius: 5px;
+}
+
+.topo{
+    margin-top: 20px;
+}
+
+.botao-cadastro-postagem1{
+    font-family: 'Barlow Condensed', sans-serif!important;
+    background-color: #05386B!important;
+    color: #EDF5E1!important;
+    font-size: large!important;
+}
+
+.titulo-cadastro-formulario{
+    font-family: 'Barlow Condensed', sans-serif!important;
+    font-weight: bold!important;
+    color: #05386B!important;
+}

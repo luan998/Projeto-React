@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&family=Comforter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&family=Barlow+Semi+Condensed:wght@500;800&family=Comforter&display=swap');
+
+
+.cursor{
+    cursor: pointer;
+}
+
+.btnModal{
+    font-family: 'Barlow Condensed', sans-serif;
+    border-color: white !important;
+    background-color: white !important;
+
+    font-size: large;
+}

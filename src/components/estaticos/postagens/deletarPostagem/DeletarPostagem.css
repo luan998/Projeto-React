@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&family=Comforter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&family=Barlow+Semi+Condensed:wght@500;800&family=Comforter&display=swap');
+
+
+.botao-postagem-delete{
+    font-family: 'Barlow Condensed', sans-serif!important;
+    background-color: rgb(136, 31, 31)!important;
+    color: #EDF5E1!important;
+    font-size: large!important;
+}
+
+.botao-postagem-delete1{
+    font-family: 'Barlow Condensed', sans-serif!important;
+    background-color: #05386B!important;
+    color: #EDF5E1!important;
+    font-size: large!important;
+}
+
+.fonte-postagem-delete{
+    font-family: 'Barlow Semi Condensed', sans-serif!important;
+    color: #05396b!important;
+    font-size:large!important;
+    
+}
+
+.fonte-postagem-texto-delete{
+    font-family: 'Barlow Semi Condensed', sans-serif!important;
+    color: #041220!important;
+    font-size:x-large!important;
+}

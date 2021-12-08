@@ -1,13 +1,27 @@
-import React from'react';
+import React,{useEffect} from'react';
 import {Typography, Box, Grid, Button} from '@material-ui/core'
-import './Home.css';
+import { useHistory} from 'react-router-dom';
+import useLocalStorage from 'react-use-localstorage';
 import TabPostagem from '../../components/estaticos/postagens/tabpostagem/TabPostagem';
-
+import ModalPostagem from '../../components/estaticos/postagens/modalPostagem/ModalPostagem';
+import './Home.css';
 /*vh é o tamanho da view port, de quem tá vendo */
 //o grid item, tá definindo o tamanho das colunas por tamanho de tela, xs, sm, e etc são os tamanho das colunas
 /* Box 2 Conteúdo dentro de cada box, define local do titulo o que a caixa é(flex) etc */
 //Na imagem a largura e a altura estão no estilo 100%, para ocupar 100% do espaço disponível
 function Home(){
+
+    let history = useHistory();
+    const [token, setToken] = useLocalStorage('token');
+
+    useEffect(() => {
+        if (token == "") {
+            alert("Você precisa estar logado")
+            history.push("/login")
+
+        }
+    }, [token])
+
     return(
         <>
             <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa'>
@@ -18,6 +32,7 @@ function Home(){
                     </Box>
                     <Box display="flex" justifyContent="center">
                         <Box marginRight={1}>
+                            <ModalPostagem/>
                         </Box>
                         <Button  className="letracor fontef2 botao">Ver Postagens</Button>
                     </Box>
