@@ -7,9 +7,9 @@
 }
 
 .btnModal{
-    font-family: 'Barlow Condensed', sans-serif;
-    border-color: white !important;
-    background-color: white !important;
-
-    font-size: large;
+    font-family: 'Barlow Condensed', sans-serif!important;
+    
+    background-color: #094628!important;
+    color: #EDF5E1!important;
+    font-size: large!important;
 }

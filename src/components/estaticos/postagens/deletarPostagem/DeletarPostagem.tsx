@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import { Typography, Button, Box, Card, CardActions, CardContent } from "@material-ui/core"
 import { useHistory, useParams } from 'react-router-dom';
-import useLocalStorage from 'react-use-localstorage';
+import { useSelector } from 'react-redux';
 import Postagem from '../../../../models/Postagem';
 import {  buscaId, deleteId } from '../../../../service/Service'
 import './DeletarPostagem.css';
 import { NoteAdd } from '@material-ui/icons';
 import { createStyles, makeStyles } from '@material-ui/core/styles'
+import { TokenState } from '../../../../store/tokens/tokensReducer';
+import { toast } from 'react-toastify';
 
 function DeletarPostagem() {
 
@@ -21,12 +23,23 @@ function DeletarPostagem() {
     
     let history = useHistory();
     const { id } = useParams<{ id: string }>();
-    const [token, setToken] = useLocalStorage('token');
+    const token = useSelector<TokenState, TokenState["tokens"]>(
+        (state) => state.tokens
+    );
     const [post, setPosts] = useState<Postagem>()
 
     useEffect(() => {
         if (token == '') {
-            alert('Você precisa estar logado')
+            toast.error("Você precisa estar logado", {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+            });
             history.push('/login')
         }
     }, [token])
@@ -52,7 +65,16 @@ function DeletarPostagem() {
                 'Authorization': token
             }
         });
-        alert('Postagem deletado com sucesso');
+        toast.success("Postagem deletada com sucesso", {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: false,
+            theme: "colored",
+            progress: undefined,
+        });
     }
 
     function nao() {

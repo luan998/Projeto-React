@@ -3,11 +3,19 @@ import GitHubIcon from '@mui/icons-material/GitHub'
 import FacebookIcon from '@material-ui/icons/Facebook'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import{Typography, Box, Grid} from '@material-ui/core'
-import './Footer.css'
+import { useSelector } from 'react-redux';
+import { TokenState } from '../../../store/tokens/tokensReducer';
+import './Footer.css';
 
 function Footer(){
-    return(
-        <>
+    const token = useSelector<TokenState, TokenState["tokens"]>(
+        (state) => state.tokens
+    );
+
+    var footerComponent;
+
+    if(token!=""){
+        footerComponent =
             <Grid container direction="row" justifyContent="center" alignItems="center" >
                 <Grid alignItems="center" item xs={12}>
                     <Box className='box1'>
@@ -16,13 +24,13 @@ function Footer(){
                         </Box>
                         <Box display="flex" alignItems="center" justifyContent="center">
                             <a href="https://www.facebook.com/generationbrasil" target="_blank">
-                                <FacebookIcon  className=" letracor redes"/>
+                                <FacebookIcon className=" letracor redes" />
                             </a>
                             <a href="https://github.com/luan998" target="_blank">
-                                <GitHubIcon  className=" letracor redes" />
+                                <GitHubIcon className=" letracor redes" />
                             </a>
                             <a href="https://www.linkedin.com/in/luan-rodrigues-88a5b1152/" target="_blank">
-                                <LinkedInIcon className=" letracor redes"/>
+                                <LinkedInIcon className=" letracor redes" />
                             </a>
                         </Box>
                     </Box>
@@ -38,6 +46,10 @@ function Footer(){
                     </Box>
                 </Grid>
             </Grid>
+    }
+    return(
+        <>
+            {footerComponent}
         </>
     )
 }

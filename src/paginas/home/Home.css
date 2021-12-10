@@ -1,5 +1,3 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&family=Comforter&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&family=Barlow+Semi+Condensed:wght@500;800&family=Comforter&display=swap');
@@ -8,11 +6,11 @@
     background-color: #5CDB95
 }
 
-.fontef1{
+.fonte-barlow{
     font-family: 'Barlow Semi Condensed', sans-serif!important;
 }
 
-.fontef2{
+.fonte-barlow2{
     font-family: 'Barlow Condensed', sans-serif!important;
 }
 .titulo{
@@ -21,12 +19,11 @@
 }
 
 .titulo2{
-    color: 'white';
     font-weight: 'bold';
 }
 
 .botao{
-    
+    font-size: large!important;
     background-color: #05386B!important;
     color: '#05386B';
 }
@@ -44,4 +41,8 @@
 
 .letracor{
     color: #EDF5E1!important;
+}
+
+.text-decorator-none{
+    text-decoration: none;
 }

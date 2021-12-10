@@ -10,6 +10,13 @@
     font-family: 'Barlow Semi Condensed', sans-serif!important;
 }
 
+.padding-left10{
+    padding-left: 10px;
+}
+
+.padding-left20{
+    padding-left: 20px;
+}
 
 .cor{
     background-color: #379683;
@@ -23,7 +30,10 @@
 .letracor2{
     color: #05396b!important;
 }
-
+.img{
+    width: 30px!important;
+    height: 30px!important;
+}
 
 .navbar{
     -webkit-box-shadow: none;

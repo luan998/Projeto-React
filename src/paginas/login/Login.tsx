@@ -1,15 +1,18 @@
 import { Grid, Box, Typography, TextField, Button } from '@material-ui/core'
 import { Link,  useHistory } from 'react-router-dom';
-import useLocalStorage from 'react-use-localstorage';
 import { login } from '../../service/Service';
 import React,{useState, useEffect, ChangeEvent} from 'react';
+import { toast } from 'react-toastify';
 import './Login.css';
 import UserLogin from '../../models/UserLogin';
+import { useDispatch} from 'react-redux';
+import { addToken } from "../../store/tokens/actions";
 
 function Login(){
 
     let history = useHistory();
-    const [token, setToken] = useLocalStorage('token');
+    const dispatch = useDispatch();
+    const [token, setToken] =useState ('');
 
     const[userLogin, setUserLogin] = useState<UserLogin>(
         {
@@ -29,6 +32,7 @@ function Login(){
 
         useEffect(()=>{
             if(token != ''){
+                dispatch(addToken(token));
                 history.push('/home')
             }
         },[token])
@@ -39,9 +43,27 @@ function Login(){
         try{
             await login(`/usuarios/logar`, userLogin, setToken)
             
-            alert('Usuário logado com sucesso!');
+            toast.success("Usuário logado com sucesso!", {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+            });
         } catch(error){
-            alert('Dados do usuário inconsistentes. Erro ao logar!')
+            toast.error('Dados do usuário inconsistentes. Erro ao logar!', {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+            });
         }
     }
 

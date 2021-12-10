@@ -1,22 +1,35 @@
 import React,{useEffect} from'react';
-import {Typography, Box, Grid, Button} from '@material-ui/core'
+import { Typography, Box, Grid, Button } from '@material-ui/core'
 import { useHistory} from 'react-router-dom';
-import useLocalStorage from 'react-use-localstorage';
+import { Link } from 'react-router-dom';
 import TabPostagem from '../../components/estaticos/postagens/tabpostagem/TabPostagem';
 import ModalPostagem from '../../components/estaticos/postagens/modalPostagem/ModalPostagem';
 import './Home.css';
-/*vh é o tamanho da view port, de quem tá vendo */
-//o grid item, tá definindo o tamanho das colunas por tamanho de tela, xs, sm, e etc são os tamanho das colunas
-/* Box 2 Conteúdo dentro de cada box, define local do titulo o que a caixa é(flex) etc */
-//Na imagem a largura e a altura estão no estilo 100%, para ocupar 100% do espaço disponível
+import { useSelector } from 'react-redux';
+import { TokenState } from '../../store/tokens/tokensReducer';
+import { toast } from 'react-toastify';
+
+
+
 function Home(){
 
     let history = useHistory();
-    const [token, setToken] = useLocalStorage('token');
+    const token = useSelector<TokenState, TokenState["tokens"]>(
+        (state) => state.tokens
+    );
 
     useEffect(() => {
         if (token == "") {
-            alert("Você precisa estar logado")
+            toast.error("Você precisa estar logado", {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+            });
             history.push("/login")
 
         }
@@ -27,14 +40,16 @@ function Home(){
             <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa'>
                 <Grid alignItems="center" item xs={6}>
                     <Box paddingX={20} >
-                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center"  className="letracor fontef2 titulo2">Seja bem vindo(a)!</Typography>
-                        <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className="letracor fontef1 titulo2">digite aqui seus pensamentos do dia!</Typography>
+                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className="letracor fonte-barlow2 titulo2">Seja bem vindo(a)!</Typography>
+                        <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className="letracor fonte-barlow titulo2">digite aqui seus pensamentos do dia!</Typography>
                     </Box>
                     <Box display="flex" justifyContent="center">
                         <Box marginRight={1}>
                             <ModalPostagem/>
                         </Box>
-                        <Button  className="letracor fontef2 botao">Ver Postagens</Button>
+                        <Link to='/postagens' className='text-decorator-none'>
+                        <Button className="letracor fonte-barlow2 botao">Ver Postagens</Button>
+                        </Link>
                     </Box>
                 </Grid>
                 <Grid item xs={6} >
